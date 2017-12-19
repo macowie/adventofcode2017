@@ -3,7 +3,7 @@ def follow_jumps(inputs, step_two: false)
   position = 0
   steps    = 0
 
-  while position < inputs.size do
+  while position < instructions.size do
     move = instructions[position]
     increment = (step_two && move >= 3) ? -1 : 1
     instructions[position] = instructions[position] + increment
